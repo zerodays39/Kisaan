@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.testbtn{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: #fff;
+    background-color: #464646;
+}
+
+body{
+    height: auto;
+    overflow-y: hidden;
+}
+
+/* mainOverlayContainer starts */
+
+@keyframes overlayVisible{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes overlayHidden{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.mainOverlayContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: ;
+    animation-duration: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    
+
+    display: ;
+}
+
+.innerMainOverlayContainer{
+    height: 25rem;
+    width: 35rem;
+    border: 1px solid #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0px 30px 60px #00000013;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlayTitleContainer{
+    height: 50%;
+    width: 100%;
+    border-radius: 0.4rem;
+    background-color: ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlayTitleHead{
+    font-family: 'Poppins', sans-serif;
+    font-size:  1.5rem;
+    color: #4d4d4d;
+    font-weight: 500;
+    padding: 5rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.overlayTitleBody{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #acacac;
+    font-weight: 400;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+.overlayButtonsContainer{
+    height: 50%;
+    width: 100%;
+    border-radius: 0.4rem;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.leftButtonContainer{
+    /* width: 50%; */
+    height: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.locationDenyButton{
+    background-color: #00000000;
+    border: none;
+    border: 1px solid #e7e7e7;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 1rem; */
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.locationDenyButtonImg{
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.locationDenyButton:hover .locationDenyButtonImg{
+    opacity: 1;
+}
+
+.rightButtonContainer{
+    /* width: 50%; */
+    height: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 0.5rem; */
+    /* margin-left: 1rem; */
+}
+
+.locationAcceptButton{
+    cursor: pointer;
+    height: 5rem;
+    background-color: #00ff88;
+    border: none;
+    border: 1px solid #00f583;
+    box-shadow: 0px 10px 20px #00f5836c;
+    border-radius: 0.3rem;
+    padding: 1rem 1.5rem;
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.3s;
+}
+
+.allowLocationButtonTitleContainer{
+    width: 80%;
+    text-align: left;
+}
+
+.allowLocationButtonTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.allowLocationImgContainer{
+    transition: 0.3s;
+    width: 20%;
+}
+
+.locationAllowRightArrowImg{
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: 0.3s;
+}
+
+.locationAcceptButton:hover{
+    box-shadow: 0px 10px 20px #00ff8898;
+}
+
+.locationAcceptButton:hover .allowLocationImgContainer{
+    padding-left:  0.75rem;
+}
+
+.locationAcceptButton:focus{
+    outline: none;
+}
+
+
+
+
+/* mainOverlayContainer ends */
+
+
+
+/* mainMapContainer starts */
+
+.mapboxgl-ctrl-logo{
+    display: none !important;
+}
+
+.mainMapContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+/* mainMapContainer ends */
+
+/* mainTopGradient starts */
+
+.mainTopGradient{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background-color: ;
+    background: linear-gradient(to bottom, #fff, #ffffff77, #ffffff00);
+}
+
+/* mainTopGradient ends */
+
+/* mainBottomGradient starts */
+
+.mainBottomGradient{
+    height: 15rem;
+    width: 100%;
+    background-color: ;
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #fff, #ffffffd7, #ffffff00);
+}
+
+/* mainBottomGradient ends */
+
+/* mainBottomCardsContainer starts */
+
+
+
+/* mainBottomCardsContainer ends */
+
+
+/* media queries start */
+
+@media only screen and (max-width: 600px) {
+    
+    .mainOverlayContainer{
+        height: 640px;
+    }
+
+    .innerMainOverlayContainer{
+        height: 25rem;
+        width: 18rem;
+        box-shadow: 0px 30px 50px #00000015;
+        overflow: hidden;
+    }
+
+    .overlayTitleHead{
+        text-align: center;
+        font-size:  1rem;
+        padding: 4rem 0 1rem 0;
+    }
+
+    .overlayTitleBody{
+        font-size: 0.9rem;
+        padding: 0 5em;
+        text-align: center;padding-top: 1rem;
+    }
+
+    .overlayButtonsContainer{
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+
+    .locationAcceptButton{
+        cursor: pointer;
+        height: 4.5rem;
+        width: 14rem;
+    }
+
+    
+
+
+    
+}
+
+/* media queries end */
